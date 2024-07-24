@@ -1,0 +1,11 @@
+<div class="m-auto container ">
+    <div>
+        <label>Name</label>
+        <input type="text" placeholder="Student Name" class="form-control" [(ngModel)]="std.name">
+    </div>
+    <div>
+        <label>Track Name</label>
+        <input type="text" placeholder="Track Name" class="form-control" [(ngModel)]="std.trackName">
+    </div>
+    <button #btn type="button" (click)="Add()" class="btn btn-outline-primary w-100 my-3">Add</button>
+</div>

@@ -1,0 +1,33 @@
+<div class="container ">
+    <h2 class="text-center">students</h2>
+    <table class="table table-hover table-striped text-center">
+        <thead>
+            <tr class="bg-primary">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Track Name</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (std of service.Students; track $index) {
+                <tr (click)="Details(std.id)">
+                    <td>{{std.id}}</td>
+                    <td>{{std.name}}</td>
+                    <td>{{std.trackName}}</td>
+                    <td (click)="$event.stopPropagation()">
+                        <button routerLink="/students/edit/{{std.id}}" (click)="BindData(std)" type="button" class="btn btn-warning mx-3 ">Edit</button>
+                        <button (click)="service.Remove(std)" type="button" class="btn btn-danger ">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<hr>
+<div class="container ">
+    <button routerLink="/students/add" class="btn w-100 m-auto btn-outline-primary">Add</button>
+</div>
+@if (detailsId != -1) {
+    <app-details [studentId]="detailsId"></app-details>
+}

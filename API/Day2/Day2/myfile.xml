@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Day2</name>
+    </assembly>
+    <members>
+        <member name="M:Day2.Controllers.studentsController.getbyid(System.Int32)">
+            <summary>
+             fun to get student by id
+            </summary>
+            <param name="id"> student id</param>
+            <returns>
+            404 if no student found
+            200+ student if any student found
+            </returns>
+            <remarks>
+            request example  
+            /api/students/2
+            </remarks>
+        </member>
+        <member name="T:Day2.Migrations.first">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.first.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.first.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.first.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Day2.Migrations.m1">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.m1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.m1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.m1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Day2.Migrations.modifyingmodels">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Day2.Migrations.modifyingmodels2">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day2.Migrations.modifyingmodels2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

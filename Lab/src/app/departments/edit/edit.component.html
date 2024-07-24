@@ -1,0 +1,16 @@
+@if(dept != null){
+    <div class="m-auto container ">
+        <div>
+            <label>Name</label>
+            <input type="text" #name placeholder="Department Name" class="form-control" [value]="dept.name || ''">
+        </div>
+        <div>
+            <label>Number of students</label>
+            <input type="number" min="1" #noStds class="form-control" [value]="dept.numberOfStudents || 0">
+        </div>
+        <button type="button" (click)="Edit(name.value, +(noStds.value))" class="btn btn-outline-primary w-100 my-3">Save</button>
+    </div>
+}
+@else {
+    <h2 class="text-center text-danger">Error Finding Required Department!</h2>
+}

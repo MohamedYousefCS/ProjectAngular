@@ -1,0 +1,18 @@
+@if(std != null){
+    <div class="m-4 container ">
+        <div>
+            <label>Name</label>
+            <input type="text" #name placeholder="Student Name" class="form-control" [value]="std.name || ''">
+        </div>
+        <div>
+            <label>Track Name</label>
+            <input type="text" #track class="form-control" [value]="std.trackName || ''">
+        </div>
+        <button #btn type="button" (click)="Edit(name.value, track.value)" class="btn btn-outline-primary w-100 my-3">Save</button>
+    </div>
+}
+@else {
+    <h2 class="text-center text-danger ">Error Finding Required Student!</h2>
+    
+}
+

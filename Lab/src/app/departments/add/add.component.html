@@ -1,0 +1,11 @@
+<div class="m-auto  container ">
+    <div>
+        <label>Name</label>
+        <input type="text" placeholder="Department Name" class="form-control" [(ngModel)]="dept.name">
+    </div>
+    <div>
+        <label>Number of students</label>
+        <input type="text" class="form-control" [(ngModel)]="dept.numberOfStudents">
+    </div>
+    <button #btn type="button" (click)="Add()" class="btn btn-outline-primary w-100  my-3">Add</button>
+</div>
